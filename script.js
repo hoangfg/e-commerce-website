@@ -21,10 +21,10 @@ copyMenu()
 const menuButton = document.querySelector(".trigger"),
     closeButton = document.querySelector(".t-close"),
     addClass = document.querySelector(".site")
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', function () {
     addClass.classList.add('showmenu')
 })
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
     addClass.classList.remove('showmenu')
 })
 
@@ -46,7 +46,16 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
-
-
-
 });
+
+// show menu search
+const searchButton = document.querySelector('.t-search'),
+    tClose = document.querySelector('.search-close'),
+    showClass = document.querySelector('.site')
+
+searchButton.addEventListener('click', function() {
+    showClass.classList.toggle('showsearch')
+})
+tClose.addEventListener('click', function() {
+    showClass.classList.remove('showsearch')
+})
