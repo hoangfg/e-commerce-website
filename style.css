@@ -423,7 +423,7 @@ nav .fly-item {
 .dpt-cat .dpt-head .mini-text {
   color: var(--light-bg-color);
 }
-.dpt-cat .dpt-triggle {
+.dpt-cat .dpt-trigger {
   position: absolute;
   right: 0;
   top: 0;
@@ -1016,6 +1016,7 @@ form.search button:hover {
 .newsletter p strong {
   color: var(--primary-color);
 }
+
 .newsletter form {
   max-width: 500px;
   width: var(--percent100);
@@ -1100,8 +1101,6 @@ form.search button:hover {
   background-color: var(--secondary-dark-color);
 }
 
-
-
 .search-bottom {
   position: fixed;
   bottom: 60px;
@@ -1125,6 +1124,41 @@ form.search button:hover {
 .search-bottom .t-close:hover {
   background-color: var(--primary-color);
 }
+
+/******************
+*   06. PAGE SINGLE   *
+******************/
+
+/******************
+*   06. PAGE SINGLE - department Menu   *
+******************/
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line {
+  display: none;
+}
+.showdpt .dpt-trigger .ri-close-line {
+  display: block;
+}
+/******************
+*   06. PAGE SINGLE - BREADCRUMB   *
+******************/
+.breadcrumb {
+  font-size: var(--font-small);
+  margin-bottom: 2rem;
+}
+.breadcrumb li:not(:last-child)::after {
+  content:'/';
+  padding: 0 0.35em;
+}
+.breadcrumb li:last-child {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--light-text-color);
+}
+
 /* ============================================================ */
 
 @media screen and (min-width: 481px) {
@@ -1339,5 +1373,12 @@ form.search button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  /* page single */
+  #page:not(.page-home) .dpt-menu {
+    display: none;
+  }
+  #page.showdpt .dpt-menu {
+    display: block;
   }
 }
