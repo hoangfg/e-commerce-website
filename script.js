@@ -135,7 +135,7 @@ document.addEventListener("click", (e) => {
 function submitFilters() {
     // Lấy tất cả các input checkbox trong khối lọc "Category"
     const categoryCheckboxes = document.querySelectorAll('.filter-block#category input[type="checkbox"]');
-   
+
     // Lấy tất cả các input checkbox trong khối lọc "Activity"
     const activityCheckboxes = document.querySelectorAll('.filter-block#activity input[type="checkbox"]');
 
