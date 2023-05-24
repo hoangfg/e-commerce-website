@@ -594,264 +594,209 @@
       <!-- header end -->
 
       <main>
-        <div class="singlecart">
+        <div class="single-checkout">
           <div class="container">
             <div class="wrapper">
               <div class="breadcrumb">
                 <ul class="flexitem">
                   <li><a href="#">Home</a></li>
-                  <li>Cart</li>
+                  <li>Checkout</li>
                 </ul>
               </div>
-              <div class="page-title">
-                <h1>Shopping Cart</h1>
-              </div>
-              <div class="products one cart">
-                <div class="flexwrap">
-                  <form action="" class="form-cart">
-                    <div class="item">
-                      <table id="cart-table">
-                        <thead>
-                          <tr>
-                            <th>Item</th>
-                            <th>Price</th>
-                            <th>Qty</th>
-                            <th>Subtotal</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="flexitem">
-                              <div class="thumbnail object-cover">
-                                <a href="#"
-                                  ><img src="assets/products/home2.jpg" alt=""
-                                /></a>
-                              </div>
-                              <div class="content">
-                                <strong>
-                                  <a href="#">Dimmable Ceiling Light Modern</a>
-                                </strong>
-                                <p>Color: Gold</p>
-                              </div>
-                            </td>
-                            <td>$279.99</td>
-                            <td>
-                              <div class="qty-control flexitem">
-                                <button class="minus">-</button>
-                                <input type="text" min="1" value="2" />
-                                <button class="plus">+</button>
-                              </div>
-                            </td>
-                            <td>$599.98</td>
-                            <td>
-                              <a href="#" class="item-remove"
-                                ><i class="ri-close-line"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="flexitem">
-                              <div class="thumbnail object-cover">
-                                <a href="#"
-                                  ><img src="assets/products/home3.jpg" alt=""
-                                /></a>
-                              </div>
-                              <div class="content">
-                                <strong>
-                                  <a href="#"
-                                    >Modern Storage Cabinet with Door & 3
-                                    Drawers</a
-                                  >
-                                </strong>
-                                <p>Type: Stand</p>
-                              </div>
-                            </td>
-                            <td>$129.99</td>
-                            <td>
-                              <div class="qty-control flexitem">
-                                <button class="minus">-</button>
-                                <input type="text" min="1" value="1" />
-                                <button class="plus">+</button>
-                              </div>
-                            </td>
-                            <td>$129.99</td>
-                            <td>
-                              <a href="#" class="item-remove"
-                                ><i class="ri-close-line"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="flexitem">
-                              <div class="thumbnail object-cover">
-                                <a href="#"
-                                  ><img src="assets/products/home4.jpg" alt=""
-                                /></a>
-                              </div>
-                              <div class="content">
-                                <strong>
-                                  <a href="#">Vonanda Velvet Sofa Couch</a>
-                                </strong>
-                                <!-- <p>Color: Gold</p> -->
-                              </div>
-                            </td>
-                            <td>$362.99</td>
-                            <td>
-                              <div class="qty-control flexitem">
-                                <button class="minus">-</button>
-                                <input type="text" min="1" value="1" />
-                                <button class="plus">+</button>
-                              </div>
-                            </td>
-                            <td>$362.99</td>
-                            <td>
-                              <a href="#" class="item-remove"
-                                ><i class="ri-close-line"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="flexitem">
-                              <div class="thumbnail object-cover">
-                                <a href="#"
-                                  ><img src="assets/products/home5.jpg" alt=""
-                                /></a>
-                              </div>
-                              <div class="content">
-                                <strong>
-                                  <a href="#">Awesome Bed for a Couple</a>
-                                </strong>
-                                <p>Type: King Size</p>
-                              </div>
-                            </td>
-                            <td>$579.99</td>
-                            <td>
-                              <div class="qty-control flexitem">
-                                <button class="minus">-</button>
-                                <input type="text" min="1" value="1" />
-                                <button class="plus">+</button>
-                              </div>
-                            </td>
-                            <td>$579.99</td>
-                            <td>
-                              <a href="#" class="item-remove"
-                                ><i class="ri-close-line"></i
-                              ></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+              <div class="checkout flexwrap">
+                <div class="item left styled">
+                  <h1>Shipping Address</h1>
+                  <form action="">
+                    <p>
+                      <label for="email">Email Address<span></span></label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocomplete="off"
+                        required
+                      />
+                    </p>
+                    <p>
+                      <label for="fname">First Name<span></span></label>
+                      <input type="text" name="fname" id="fname" required />
+                    </p>
+                    <p>
+                      <label for="lname">Last Name<span></span></label>
+                      <input type="text" name="lname" id="lname" required />
+                    </p>
+                    <p>
+                      <label for="address">Street Address<span></span></label>
+                      <input type="text" name="address" id="address" required />
+                    </p>
+                    <p>
+                      <label for="city">City<span></span></label>
+                      <input type="text" name="city" id="city" required />
+                    </p>
+                    <p>
+                      <label for="state">State/Province<span></span></label>
+                      <input type="text" name="state" id="state" required />
+                    </p>
+                    <p>
+                      <label for="postal">Zip / Postal code<span></span></label>
+                      <input type="number" name="postal" id="postal" required />
+                    </p>
+                    <p>
+                      <label for="country">Contry</label>
+                      <select name="country" id="country">
+                        <option value="">--selected--</option>
+                        <option value="1">Arganistan</option>
+                        <option value="2">Aland Islan</option>
+                        <option value="3">Albania</option>
+                        <option value="4" selected="selected">
+                          United States
+                        </option>
+                        <option value="5">Orther</option>
+                      </select>
+                    </p>
+                    <p>
+                      <label for="phone">Phone<span></span></label>
+                      <input type="number" name="phone" id="phone" required />
+                    </p>
+                    <p>
+                      <label>Order Notes (optional)</label>
+                      <textarea cols="30" rows="10"></textarea>
+                    </p>
+                    <p class="checkset">
+                      <input type="checkbox" name="anaccount" id="anaccount" />
+                      <label for="anaccount">Created an account</label>
+                    </p>
                   </form>
-                  <div class="cart-summary styled">
-                    <div class="item">
-                      <div class="coupon">
-                        <input type="text" placeholder="Enter coupon" />
-                        <button>Apply</button>
-                      </div>
-                      <div class="shipping-rate collapse">
-                        <div class="has-child expand">
-                          <a href="" class="icon-small"
-                            >Estimate Shipping and tax</a
-                          >
-                          <div class="content">
-                            <div class="contries">
-                              <form action="">
-                                <label for="country">Contry</label>
-                                <select name="country" id="country">
-                                  <option value="">--selected--</option>
-                                  <option value="1">Arganistan</option>
-                                  <option value="2">Aland Islan</option>
-                                  <option value="3">Albania</option>
-                                  <option value="4" selected="selected">
-                                    United States
-                                  </option>
-                                  <option value="5">Orther</option>
-                                </select>
-                              </form>
-                            </div>
-                            <div class="states">
-                              <form action="">
-                                <label for="state">State/Province</label>
-                                <select name="state" id="state">
-                                  <option value="">--selected--</option>
-                                  <option value="1">Alabama</option>
-                                  <option value="2">Alaska</option>
-                                  <option value="3">American Samoa</option>
-                                  <option value="4" selected="selected">
-                                    Arizona
-                                  </option>
-                                  <option value="5">Arkansas</option>
-                                  <option value="5">Orthers</option>
-                                </select>
-                              </form>
-                            </div>
-                            <div class="postal-code">
-                              <form action="#">
-                                <label for="postal" name="postal" id="postal"
-                                  >Zip/Postal Code</label
-                                >
-                                <input
-                                  type="number"
-                                  name="postal"
-                                  id="postal"
-                                />
-                              </form>
-                            </div>
-                            <div class="rate-options variant">
-                              <form action="">
-                                <p>
-                                  <span>Flat: $10.00</span>
-                                  <input
-                                    type="radio"
-                                    name="rate-option"
-                                    id="flat"
-                                    checked
-                                  />
-                                  <label for="flat" class="circle"></label>
-                                </p>
-                                <p>
-                                  <span>Best: $00.00</span>
-                                  <input
-                                    type="radio"
-                                    name="rate-option"
-                                    id="best"
-                                  />
-                                  <label for="best" class="circle"></label>
-                                </p>
-                              </form>
-                            </div>
+                  <div class="shipping-methods">
+                    <h2>Shopping Mothods</h2>
+                    <p class="checkset">
+                      <input type="radio" checked />
+                      <label for="">$5.00 Flare Rate</label>
+                    </p>
+                  </div>
+                  <div class="primary-checkout">
+                    <button class="primary-button">Place Order</button>
+                  </div>
+                </div>
+                <div class="item right">
+                  <h2>Order Summary</h2>
+                  <div class="summary-order is_sticky">
+                    <div class="summary-totals">
+                      <ul>
+                        <li>
+                          <span>Subtotal</span>
+                          <span>$2155.95</span>
+                        </li>
+                        <li>
+                          <span>Discount</span>
+                          <span>$100.00</span>
+                        </li>
+                        <li>
+                          <span>Shipping Flat</span>
+                          <span>$10.00</span>
+                        </li>
+                        <li>
+                          <span>Total</span>
+                          <strong>$2065.95</strong>
+                        </li>
+                      </ul>
+                      <ul class="products mini">
+                        <li class="item">
+                          <div class="thumbnail object-cover">
+                            <a href="#">
+                              <img src="assets/products/home1.jpg" alt="" />
+                            </a>
                           </div>
-                        </div>
-                      </div>
-                      <div class="cart-total">
-                        <table>
-                          <tbody>
-                            <tr>
-                              <th>Subtotal</th>
-                              <td>$2155.95</td>
-                            </tr>
-                            <tr>
-                              <th>Discount</th>
-                              <td>$100.00</td>
-                            </tr>
-                            <tr>
-                              <th>
-                                Shipping <span class="mini-text">[flat]</span>
-                              </th>
-                              <td>$10.00</td>
-                            </tr>
-                            <tr class="grand-total">
-                              <th>TOTAL</th>
-                              <td>$2065.95</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <a href="/checkout.html" class="secondary-button"
-                          >CHECKOUT</a
-                        >
-                      </div>
+                          <div class="item-content">
+                            <p>
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </p>
+                            <span class="price">
+                              <span>1279.99</span>
+                              <span> <span>2x</span></span>
+                            </span>
+                          </div>
+                          <a href="#" class="item-remove"
+                            ><i class="ri-close-line"></i
+                          ></a>
+                        </li>
+                        <li class="item">
+                          <div class="thumbnail object-cover">
+                            <a href="#">
+                              <img src="assets/products/home2.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="item-content">
+                            <p>
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </p>
+                            <span class="price">
+                              <span>1279.99</span>
+                              <span> <span>2x</span></span>
+                            </span>
+                          </div>
+                          <a href="#" class="item-remove"
+                            ><i class="ri-close-line"></i
+                          ></a>
+                        </li>
+                        <li class="item">
+                          <div class="thumbnail object-cover">
+                            <a href="#">
+                              <img src="assets/products/home3.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="item-content">
+                            <p>
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </p>
+                            <span class="price">
+                              <span>1279.99</span>
+                              <span> <span>2x</span></span>
+                            </span>
+                          </div>
+                          <a href="#" class="item-remove"
+                            ><i class="ri-close-line"></i
+                          ></a>
+                        </li>
+                        <li class="item">
+                          <div class="thumbnail object-cover">
+                            <a href="#">
+                              <img src="assets/products/home4.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="item-content">
+                            <p>
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </p>
+                            <span class="price">
+                              <span>1279.99</span>
+                              <span> <span>2x</span></span>
+                            </span>
+                          </div>
+                          <a href="#" class="item-remove"
+                            ><i class="ri-close-line"></i
+                          ></a>
+                        </li>
+                        <li class="item">
+                          <div class="thumbnail object-cover">
+                            <a href="#">
+                              <img src="assets/products/home5.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="item-content">
+                            <p>
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </p>
+                            <span class="price">
+                              <span>1279.99</span>
+                              <span> <span>2x</span></span>
+                            </span>
+                          </div>
+                          <a href="#" class="item-remove"
+                            ><i class="ri-close-line"></i
+                          ></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
